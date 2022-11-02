@@ -4,7 +4,7 @@ title: "Armaans Website-Greatest Site on the Web"
 
 This is Armaans website for data science! And maybe this will be my overall website in the future, we shall see!
 
-## Photo of the Author
+## Photo of the Author (may not be correct but isnt that a cool gif!)
 
 ![](https://media.giphy.com/media/r4ETNkMFQFos0/giphy.gif?cid=ecf05e47dqvy4anac31x6ogfm32usexemtbn7jqo59aeq35v&rid=giphy.gif&ct=g.gif)
 
