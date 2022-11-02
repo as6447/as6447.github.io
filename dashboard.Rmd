@@ -44,7 +44,7 @@ instacart_tidy%>%
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Bar Chart
+### Bar Chart looking at the association between `days_since_prior_order` and `order_number`
 
 ```{r}
 instacart_tidy%>%
@@ -55,7 +55,7 @@ instacart_tidy%>%
 ```
 
 
-### Scatterplot that evaluates the distribution of objects to the 
+### Scatterplot that evaluates the distribution of `order_dow` 
 
 ```{r}
 instacart_tidy%>%
