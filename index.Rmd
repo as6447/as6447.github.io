@@ -1,0 +1,15 @@
+---
+title: "Armaans Website-Greatest Site on the Web"
+---
+
+This is Armaans website for data science! And maybe this will be my overall website in the future, we shall see!
+
+## Photo of the Author
+
+![](https://media.giphy.com/media/r4ETNkMFQFos0/giphy.gif?cid=ecf05e47dqvy4anac31x6ogfm32usexemtbn7jqo59aeq35v&rid=giphy.gif&ct=g.gif)
+
+### Description of Site: 
+
+* This website is will provide you with proof that Armaan created this site and information about who the man, myth, and legend is in actuality (i.e. my resume). This will be located in the **About** Page. 
+* There will be links in the **Navigation Bar** to my Github, email, and my Linkedin. 
+* You will also be able to see some cool graphics that I have made regarding data from the company *Instacart*. 

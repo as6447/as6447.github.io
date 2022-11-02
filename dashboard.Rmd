@@ -1,0 +1,66 @@
+---
+title: "flexdashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+
+```{r}
+data("instacart")
+
+instacart = 
+  instacart %>% 
+  as_tibble(instacart)
+```
+
+```{r}
+instacart_tidy =
+   instacart%>%
+   janitor::clean_names()%>%
+   sample_n(4000)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart Boxplot comparing `the order hour of the day ` and `order in which each product was added to cart`
+
+
+```{r scatterplot time object ordered}
+instacart_tidy%>%
+   plot_ly(
+   x = ~order_hour_of_day, y = ~add_to_cart_order, type = "box", color=~days_since_prior_order)
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Bar Chart
+
+```{r}
+instacart_tidy%>%
+    filter(!is.na(aisle))%>%
+   plot_ly(
+   x = ~days_since_prior_order, y = ~order_number, type = "bar",  color =~department)
+
+```
+
+
+### Scatterplot that evaluates the distribution of objects to the 
+
+```{r}
+instacart_tidy%>%
+   count(order_dow)%>%
+   plot_ly(
+   x = ~order_dow, y = ~n, type = "scatter", mode='lines+markers', color = 'viridis', alpha = 0.5)
+```
+
